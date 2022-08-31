@@ -53,7 +53,7 @@ const UserSearch = () => {
           </div>
         </form>
       </div>
-      {users.length > 0 && (
+      {users && users.length > 0 && (
         <div>
           <button
             onClick={() => dispatch({ type: "CLEAR_USERS" })}
